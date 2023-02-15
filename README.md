@@ -29,10 +29,8 @@ This package provides a flexible filesystem abstraction. It contains drivers for
 
 ```python
 #Using NPM
-npm i @squareboat/nest-storage
+npm i @sauvanlangtu/nest-storage
 
-#Using YARN
-yarn i @squareboat/nest-storage
 ```
 ---
 ## Getting Started
@@ -211,14 +209,14 @@ To switch between the different disks, it is as simple as:
 
 **To access `invoices` disk:**
 ```typescript
-import { Storage } from '@squareboat/nest-storage'
+import { Storage } from '@sauvanlangtu/nest-storage'
 
 Storage.disk('invoices') // uses the `invoices` disk mentioned in above steps
 ```
 
 **To access `products` disk:**
 ```typescript
-import { Storage } from '@squareboat/nest-storage'
+import { Storage } from '@sauvanlangtu/nest-storage'
 
 Storage.disk('products') // uses the `products` disk 
 ```
@@ -251,15 +249,3 @@ This package provides a single and uniform API for any type of operation across 
 - `getClient()`: Get the underlying client of the disk. Currently works for `s3` only.
 
 - `getConfig()`: Get the configuration object of the disk.
-----
-
-## About Us
-
-We are a bunch of dreamers, designers, and futurists. We are high on collaboration, low on ego, and take our happy hours seriously. We'd love to hear more about your product. Let's talk and turn your great ideas into something even greater! We have something in store for everyone. [☎️ 📧 Connect with us!](https://squareboat.com/contact)
-
-----
-## License
-
-The MIT License. Please see License File for more information. Copyright © 2020 SquareBoat.
-
-Made with ❤️ by [Squareboat](https://squareboat.com)
