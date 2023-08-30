@@ -29,7 +29,7 @@ This package provides a flexible filesystem abstraction. It contains drivers for
 
 ```python
 #Using NPM
-npm i @sauvanlangtu/nest-storage
+npm i @tuanlerepo/nest-storage
 
 ```
 ---
@@ -43,7 +43,7 @@ To register `StorageModule` with your app, import the module inside `AppModule`.
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { StorageModule } from '@squareboat/nest-storage'
+import { StorageModule } from '@tuanlerepo/nest-storage'
 
 @Module({
   imports: [
@@ -209,14 +209,14 @@ To switch between the different disks, it is as simple as:
 
 **To access `invoices` disk:**
 ```typescript
-import { Storage } from '@sauvanlangtu/nest-storage'
+import { Storage } from '@tuanlerepo/nest-storage'
 
 Storage.disk('invoices') // uses the `invoices` disk mentioned in above steps
 ```
 
 **To access `products` disk:**
 ```typescript
-import { Storage } from '@sauvanlangtu/nest-storage'
+import { Storage } from '@tuanlerepo/nest-storage'
 
 Storage.disk('products') // uses the `products` disk 
 ```
